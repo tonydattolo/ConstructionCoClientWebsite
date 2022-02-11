@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ea4b6180c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon/toolbox-196249/favicon.ico" type="image/jpg">
+
+    <title>Carr Construction</title>
+
+  </head>
+  <body>
+
+    <!-- To Top Button -->
+    <a id="toTopButton" href="#title" type="button" class="btn btn-primary btn-circle btn-sm">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- To Estimate Button -->
+    <a id="toEstimateButton" href="#estimate" type="button" class="btn btn-warning btn-sm">
+        <!-- <i class="fas fa-arrow-up"></i> -->
+        Estimate
+    </a>
+    <!-- Title Section -->
+    <section id="title">
+        <div class="container-fluid">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#title" class="navbar-brand">
+                    <!-- CARR<span id="smallNavBrand"> & Sons Construction Co.</span> -->
+                    <img id="logo" src="images/logo/tinycarrlogo.png" alt="CARR">
+                </a>
+                <!-- hamburger menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarContent" aria-controls="navbarContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- nav links / pages -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#estimate" class="nav-link">Estimate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Recent Projects</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="titleText">Quality, Affordable, Fast Construction to bring your home dreams to life.</h1>
+                    <!-- <p>other text</p> -->
+                    <div class="titleGrouping">
+                        <img class="titleImage" src="images/vector_art/suburbs.svg" alt="">
+                        <a href="tel:8126311272" type="button" class="btn btn-primary btn-lg contactButtons">
+                            <i class="fas fa-phone"></i>
+                            Call
+                        </a>
+                        <a href="mailto:chris@buildwithcarr.com" type="button" class="btn btn-primary btn-lg contactButtons">
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </a>
+                    </div>
+                    
+                </div>
+                <!-- Estimate Form -->
+                <div class="col-lg-6 col-md-12" id="estimate">
+                    <div class="estimateForm">
+                        <form action="https://formspree.io/f/xqkgbbkn" method="POST" enctype="" name="estimateForm">
+                            <div class="estimateHeader">
+                                <h3>Get a Free Estimate</h3>
+                            </div>
+                            <div class="form-group">
+                              <input name="contactName" required type="text" class="form-control" id="clientName" placeholder="&#xF007;    Full Name">
+                            </div>
+                            <div class="form-group">
+                              <input name="contactEmail" required type="email" class="form-control" id="clientEmail" placeholder="&#xF0E0;    Email Address">
+                            </div>
+                            <div class="form-group">
+                              <input name="contactPhone" type="tel" class="form-control" id="clientPhone" placeholder="&#xF095;    Phone Number (optional)">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="contactMessage" required type="text" class="form-control" id="clientMessage" rows="3" placeholder="&#xF573;   Your project description"></textarea>
+                            </div>
+                            <input type="submit" value="Start My Estimate  &#xf0a9;" class="btn btn-warning bg-warning">
+                                <!-- <i class="fas fa-arrow-circle-right"></i> -->
+                            </input>
+                          </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Estimate Section -->
+    <section id="services" class="blue-section">
+        <div class="service-heading-text">
+            <h1 class="white-text">
+                Experienced construction experts for your next project.
+            </h1>
+            <p class="white-text"> We explain the process every step of the way. No matter what you need, we make sure it's done right - the first time. At the most competitve local rates, contact us for an estimate today.</p>
+        </div>
+        <!-- 
+            This section is made up of columns of responsive cards. each card has a more info button.
+            this button opens up a vertically centered modal with that addition info
+         -->
+        <div class="row">
+            <!-- Service 0: Remodeling -->
+            <div class="service-col col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/vector_art/remodel.svg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Remodeling</h2>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_0" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Remodeling Services</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    Our team is capable of everything from minor aesthetic changes to complete gutting and remodeling. Tiling, backsplash, drywall, plumbing installation, etc. - we can make your home look good as new, regardless of your budget.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-warning">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 1: Additions -->
+            <div class="service-col col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/vector_art/3 houses.svg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Additions</h2>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_1" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Home Additions</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Add on a patio, update the front porch, build a new deck for barbeque fun. Let's brainstorm together, keeping price and quality in mind.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 2: Contracting -->
+            <div class="service-col col-lg-4 col-md-6">
+              <div class="card text-center">
+                  <img class="card-img-top" src="images/vector_art/hardhat guy.svg" alt="">
+                  <div class="card-body">
+                      <h2 class="card-title">Contracting</h2>
+                      <button type="button" data-toggle="modal" data-target="#serviceModal_2" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                      <div class="modal fade" id="serviceModal_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Contracting</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                Cabinetry, Carpentry, Commercial Services, Concrete & Masonry, Damage Restoration, Decks and Railing,
+                                Demolition Services, Door Services, Electrical Services, Fences and Gates, Flooring, General Contracting,
+                                Gutter Services, Home Building, Plaster and Drywall Services, Windows Services
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+            <!-- Service 3: Painting -->
+            <div class="service-col col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/vector_art/picking out color.svg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Painting</h2>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_3" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Painting</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Want to freshen up a room in the house? We offer interior paint services that'll have you feeling like you have a brand new space - without breaking the bank.
+                                  We also do exterior work. From sheds, to trailors, to painted brick.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 4: Installations -->
+            <div class="service-col col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/vector_art/heavy box with stepcart.svg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Installations</h2>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_4" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Installations</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  So you bought a 74 inch TV off amazon, and suddenly you realize, it's far too big for the TV stand you have. No problem, we can come hang it on the wall for you with ease. Headache averted.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service 5: Waste Mgmt
+            <div class="service-col col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img class="card-img-top" src="images/vector_art/moving boxes on dolly.svg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Waste Mgmt.</h2>
+                        <button type="button" data-toggle="modal" data-target="#serviceModal_5" class="btn btn-outline-dark btn-block serviceButton">More Info</button>
+                        <div class="modal fade" id="serviceModal_5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Waste Management</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Need a regularly scheduled pickup of unwanted waste? Email us today, and we can work something out for you.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>        
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="white-section">
+        <!-- <div class="container-fluid"> -->
+        <div class="">
+            <div class="project-heading-text">
+                Recent Projects
+            </div>
+
+            <div id="projectsCarousel" class="carousel slide" data-ride="">
+                <div class="carousel-inner">
+                  <div class="carousel-item active container-fluid">
+                    <div>
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="fill">
+                            <div class="card-body">
+                                <h2 class="card-title">Bathroom Remodel</h2>
+                                <button type="button" data-toggle="modal" data-target="#project1Modal" class="btn btn-outline-dark btn-block">View Pictures</button>
+                                <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="bathroomModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="bathroomModalLabel">Bathroom Remodel</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/shower.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/sinks.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/tiling.jpg" alt="">
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- second project card -->
+                  <div class="carousel-item container-fluid">
+                    <div>
+                        <div class="card text-center">
+                            <img class="card-img-top" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="fill">
+                            <div class="card-body">
+                                <h2 class="card-title">Second Project</h2>
+                                <button type="button" data-toggle="modal" data-target="#project1Modal" class="btn btn-outline-dark btn-block">View Pictures</button>
+                                <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="bathroomModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="bathroomModalLabel">Second Project</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/bathroomPanorama.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/shower.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/sinks.jpg" alt="">
+                                            <img class="img-fluid projectModalImages" src="images/projectsShowcase/bathroomRemodel_1/tinified/tiling.jpg" alt="">
+                                             -->
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <!-- <a href="#estimate" type="button" class="btn btn-primary">Launch Estimate</a> -->
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+            <ol class="carousel-indicators">
+                <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#testimonial-carousel" data-slide-to="1"></li>
+                <li data-target="#testimonial-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                    <h2 class="testimonial-text white-text">Carr took our completely gutted bathroom and turned it into something out of Better Homes & Gardens magazine. Thanks Chris!!</h2>
+                    <img class="testimonial-image" src="images/clientTestimonialPortraits/rebecca.jpg" alt="Rebecca">
+                    <em class="white-text">Rebecca, Indiana</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text white-text">We wanted to freshen up the exterior of our home without breaking the bank. Chris did a custom exterior painted brick job that did just the trick.</h2>
+                    <img class="testimonial-image" src="images/clientTestimonialPortraits/tucker.jpg" alt="Tucker">
+                    <em class="white-text">Tucker, Indiana</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text white-text">Our garage was costing us money from poor insullation. Carr & Sons installed insullation and a new door quickly and cheaply.</h2>
+                    <img class="testimonial-image" src="images/clientTestimonialPortraits/clint.jpg" alt="Clint">
+                    <em class="white-text">Clint, Indiana</em>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- About Us/Message from the team -->
+    <!-- <section id="about" class="white-section">
+        
+    </section> -->
+    <!-- Contact/Social Media Section -->
+    <section id="contact" class="white-section">
+        <div class="container-fluid text-center">
+            <h4>Carr & Sons Construction Co.</h4>
+            <a href="mailto:chris@buildwithcarr.com" class="btn btn-link">
+                <i class="far fa-envelope"></i>
+                chris@buildwithcarr.com
+            </a>
+            <br>
+            <a href="tel:8126311272" class="btn btn-link">
+                <i class="fas fa-phone"></i>
+                (812) 631-1272
+            </a>
+            <div class="socialLinks">
+                <!-- <a href="#"><i class="fab fa-twitter fa-2x"></i></a> -->
+                <!-- <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a> -->
+                <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-yelp fa-2x"></i></a>
+                <!-- <a href="#"><i class="fab fa-pinterest fa-2x"></i></a> -->
+            </div>
+        </div>
+        <p></p>
+    </section>
+    
+    <!-- Footer -->
+
+    <footer class="white-section" id="footer">
+        <div class="container-fluid">
+          <p>© Copyright 2020 Car & Sons Construction Co.</p>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
